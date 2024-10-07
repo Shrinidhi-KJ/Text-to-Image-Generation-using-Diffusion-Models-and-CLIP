@@ -6,11 +6,11 @@ This project implements a Text-to-Image generation pipeline utilizing diffusion 
 The project leverages Classifier-Free Guidance (CFG) for improved output quality and includes support for text conditioning with CLIP. Both text-to-image generation and image-to-image transformation are supported by the pipeline.
 
 ## Features
-*Text-to-Image Generation: Generate images based on text prompts using diffusion and VAE models.
-*Image-to-Image Transformation: Modify existing images by adding noise and refining them through a diffusion process.
-*Classifier-Free Guidance (CFG): Control the scale of guidance to balance creativity and adherence to the prompt.
-*Latent Space Manipulation: Work in the latent space of VAE for efficient image generation.
-*Time-Conditioned Diffusion: Use a DDPM (Denoising Diffusion Probabilistic Model) sampler for the diffusion process.
+* Text-to-Image Generation: Generate images based on text prompts using diffusion and VAE models.
+* Image-to-Image Transformation: Modify existing images by adding noise and refining them through a diffusion process.
+* Classifier-Free Guidance (CFG): Control the scale of guidance to balance creativity and adherence to the prompt.
+* Latent Space Manipulation: Work in the latent space of VAE for efficient image generation.
+* Time-Conditioned Diffusion: Use a DDPM (Denoising Diffusion Probabilistic Model) sampler for the diffusion process.
 
 ## How It Works
 1) VAE Encoder: Encodes input images into a compressed latent space.
@@ -19,19 +19,19 @@ The project leverages Classifier-Free Guidance (CFG) for improved output quality
 4) VAE Decoder: Decodes the final latent output back into a high-resolution image.
 
 ## Model Architecture
-*VAE Encoder & Decoder: Used for compressing and reconstructing images.
-*CLIP: Maps text into an embedding space for conditioning the diffusion process.
-*DDPM Sampler: Handles the diffusion steps and noise addition.
+* VAE Encoder & Decoder: Used for compressing and reconstructing images.
+* CLIP: Maps text into an embedding space for conditioning the diffusion process.
+* DDPM Sampler: Handles the diffusion steps and noise addition.
 
 ## Setup
 Prerequisites
 Ensure you have the following installed:
 
-*Python 3.8+
-*PyTorch 1.7+
-*HuggingFace Tokenizers
-*NumPy
-*tqdm
+* Python 3.8+
+* PyTorch 1.7+
+* HuggingFace Tokenizers
+* NumPy
+* tqdm
 
 ## Installation
 1) Clone the Repository
@@ -58,8 +58,8 @@ python generate.py --input_image path_to_image --strength 0.75
 * --cfg_scale: Control the Classifier-Free Guidance scale (default is 7.5
 
 ## Performance
-*Resolution: Generates images at a resolution of 512x512.
-*Inference Time: Approx. 1-2 minutes per image (depending on GPU).
+* Resolution: Generates images at a resolution of 512x512.
+* Inference Time: Approx. 1-2 minutes per image (depending on GPU).
 
 ## Customization
 You can experiment with different samplers, CFG scales, and model parameters to achieve a variety of artistic results.
