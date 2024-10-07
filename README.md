@@ -37,23 +37,23 @@ Ensure you have the following installed:
 1) Clone the Repository
 2) Install dependencies:
 
-'''bash
+```bash
 pip install -r requirements.txt
-'''
+```
 4)  Download the pretrained model weights and place them in the appropriate directory
 
 ## Running the Pipeline
 To generate images from text prompts:
 
-'''bash
+```bash
 python generate.py --prompt "A serene mountain landscape at sunset"
-'''
+```
 
 To perform image-to-image transformation:
 
-'''bash
+```bash
 python generate.py --input_image path_to_image --strength 0.75
-'''
+```
 
 ## Arguments
 * --prompt: Text prompt for the generation.
