@@ -1,4 +1,4 @@
-### Text-to-Image Generation using Diffusion Models
+# Text-to-Image Generation using Diffusion Models
 
 ## Overview
 This project implements a Text-to-Image generation pipeline utilizing diffusion models, VAE (Variational AutoEncoder), and CLIP (Contrastive Language–Image Pretraining). It allows users to generate high-fidelity images from textual descriptions or edit input images using a noise-based approach.
